@@ -3,7 +3,7 @@ import numpy as np
 import cv2
 import matplotlib.pyplot as plt
 
-img = cv2.imread('H:/Sem5/Day4/Images/face.jpg', cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('face.jpg', cv2.IMREAD_GRAYSCALE)
 
 f = cv2.dft(np.float32(img), flags=cv2.DFT_COMPLEX_OUTPUT)
 sf = np.fft.fftshift(f)
